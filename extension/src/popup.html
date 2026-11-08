@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Agent Hub</title><link rel="stylesheet" href="style.css"><style>body{width:320px}</style></head>
+<body><main>
+  <h1>Agent Hub bridge</h1>
+  <div class="card">
+    <label class="switch"><span>Let the agent use my browser</span><input type="checkbox" id="enabled"></label>
+    <small>Paired with: <span id="origin"></span></small>
+  </div>
+  <div class="card">
+    <span id="access"></span>
+    <button id="grant" class="primary" hidden>Grant tab access</button>
+    <button id="revoke">Revoke tab access</button>
+  </div>
+  <div class="card">
+    <span class="label">Sites you approved this session</span>
+    <pre id="sites"></pre>
+    <button id="clear" hidden>Clear approvals</button>
+  </div>
+  <button id="open">Open Agent Hub</button>
+</main><script src="popup.js"></script></body></html>
